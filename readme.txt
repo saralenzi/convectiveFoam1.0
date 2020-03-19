@@ -18,7 +18,7 @@ where beta is the thermal expansion coefficient.
 \* ---- */
 
 
-How to use convectiveFoam1.0?
+How to use convectiveFoam1.0 :
 
 - clone the source files in your preferred directory
 
@@ -29,7 +29,3 @@ How to use convectiveFoam1.0?
   the script:
     ./Allwmake
 
-- try it with the singlePlume case, in your tutorial folder, by
-  using the following commands:
-    cd $WM_PROJECT_USER_DIR/tutorials/convectiveFoam/singlePlume/Pr1_Ra1e6_limLin
-    ./Allrun
