@@ -22,9 +22,4 @@ mkdir -p $WM_PROJECT_USER_DIR/applications/solvers/convectiveFoam1.0
 rsync -uav *  $WM_PROJECT_USER_DIR/applications/solvers
 (cd $WM_PROJECT_USER_DIR/applications/solvers/convectiveFoam1.0/ && wmake)
 
-
-## Move the tutorials to the proper folder
-#mkdir -p $WM_PROJECT_USER_DIR/tutorials/convectiveFoam1.0
-#rsync -uav tutorials/* $WM_PROJECT_USER_DIR/tutorials/convectiveFoam1.0
-
 # ----------------------------------------------------------------- end-of-fil
