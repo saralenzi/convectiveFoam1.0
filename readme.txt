@@ -1,4 +1,4 @@
-Solver for the incompressible Bounssinesq equation, based on pimpleFoam and
+Solver for the incompressible Boussinesq equation, based on pimpleFoam and
 buoyantBoussinesqPimpleFoam. See www.openfoam.org. By Matteo Cerminara (https://github.com/cerminara) and Sara Lenzi.
 
 In this solver, the buoyancy term is written explicitly in his original
