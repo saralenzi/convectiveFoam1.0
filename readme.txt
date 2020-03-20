@@ -17,7 +17,7 @@ where beta is the thermal expansion coefficient.
 
 How to use convectiveFoam1.0 :
 
-- Download the source files in your preferred directory
+- Download the source files
 
 - Be sure the environment variables of OpenFoam 4.x have been
   loaded in your terminal window
