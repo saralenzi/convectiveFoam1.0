@@ -7,7 +7,9 @@ formulation. No subgrid model adopted.
 ## Equations:
 
 div(U) = 0              ---- (PISO algorithm)
-ddt(U) + div( U x U ) = -grad(p) + div(stress) - beta(T-TRef) g
+
+ddt(U) + div( U x U ) = -grad(p) + div(stress) - g beta(T-TRef)
+
 ddt(T) + div(U T) = div(diffusion)
 
 where beta is the thermal expansion coefficient.
