@@ -6,15 +6,12 @@ formulation. No subgrid model adopted.
 
 ## Equations:
 
-
-$$\frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla)\mathbf{u} = -\frac{1}{\rho_0}\nabla p - g \beta \Delta T 
+\frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla)\mathbf{u} = -\frac{1}{\rho_0}\nabla p - g \beta \Delta T 
 \mathbf{\hat{z}} + \nu \nabla^2 \mathbf{u} \\ 
 
 \frac{\partial T}{\partial t} + (\mathbf{u} \cdot \nabla) T = \kappa \nabla^2 T \\ 
 
-\nabla \cdot \mathbf{u} = 0.$$
-
-\inference{ \Gamma \vdash x_0 : T_0 \enspace \Gamma \vdash x_1 : T_1 \thinspace ... \thinspace \Gamma \vdash x_n : T_n \enspace \Gamma \vdash x_n : T_{n+1} \enspace }{ \Gamma \vdash {\bf match} \enspace x_0 : T_0 \enspace : \sqcap _{1\geq n \geq x+1} T_n }[MatchExpression]
+\nabla \cdot \mathbf{u} = 0.
 
 where beta is the thermal expansion coefficient.
 
