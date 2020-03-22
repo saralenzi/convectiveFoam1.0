@@ -19,13 +19,13 @@ where beta is the thermal expansion coefficient.
 
 ##  Installation
 
-    Download the source files
-    Make everything executable if necessary
+  - Download the source files
+  - Make everything executable if necessary
     ```
     chmod -R +x *
     ```
-    Be sure the environment variables of OpenFoam 4.x have been loaded in your terminal window
-     - Enter in the convectiveFoam1.0 folder and install it running the script:
+  - Be sure the environment variables of OpenFoam 4.x have been loaded in your terminal window
+  - Enter in the convectiveFoam1.0 folder and install it running the script:
     ```
     ./Allwmake
     ```
@@ -33,7 +33,7 @@ where beta is the thermal expansion coefficient.
 
  ## Run the tutorial
 
-    Enter in the PrInfRa3e6 folder and run: 
+  - Enter in the PrInfRa3e6 folder and run: 
     ```
     ./Allclean 
     ```       
