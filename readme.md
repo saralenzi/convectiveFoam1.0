@@ -6,6 +6,14 @@ formulation. No subgrid model adopted.
 
 ## Equations:
 
+
+\frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla)\mathbf{u} = -\frac{1}{\rho_0}\nabla p - g \beta \Delta T 
+\mathbf{\hat{z}} + \nu \nabla^2 \mathbf{u} \\ 
+
+\frac{\partial T}{\partial t} + (\mathbf{u} \cdot \nabla) T = \kappa \nabla^2 T\\ 
+
+\nabla \cdot \mathbf{u} = 0.
+
 div(U) = 0              ---- (PISO algorithm)
 
 ddt(U) + div( U x U ) = -grad(p) + div(stress) - g beta(T-TRef)
