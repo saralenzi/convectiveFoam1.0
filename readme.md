@@ -1,43 +1,62 @@
-Solver for the incompressible Boussinesq equation, based on pimpleFoam and
-buoyantBoussinesqPimpleFoam. See www.openfoam.org. By Matteo Cerminara (https://github.com/cerminara) and Sara Lenzi.
+<p>Solver for the Navier Stokes equations for the infinite Prandtl case in the Boussinesq approximation.</p>
 
-In this solver, the buoyancy term is written explicitly in his original
-formulation. No subgrid model adopted.
+<p><em><strong>General non dimensional problem:</strong></em></p>
 
-## Equations:
+<p><em><span class="math-tex">\(\nabla p - \text{Ra}T \mathbf{\hat{z}} - \nabla^2 \mathbf{u} = 0\\ \frac{\partial T}{\partial t} + (\mathbf{u} \cdot \nabla)T = \nabla^2 T \\ \nabla \cdot \mathbf{u} = 0.\)</span></em></p>
 
-\frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla)\mathbf{u} = -\frac{1}{\rho_0}\nabla p - g \beta \Delta T 
-\mathbf{\hat{z}} + \nu \nabla^2 \mathbf{u} \\
+<p>&nbsp;</p>
 
-\frac{\partial T}{\partial t} + (\mathbf{u} \cdot \nabla) T = \kappa \nabla^2 T \\ 
+<p>The model is developed on the OpenFOAM platform, based on <em>pimpleFoam</em> and <em>buoyantBoussinesqPimpleFoam</em> (See www.openfoam.org.) by Matteo Cerminara (https://github.com/cerminara) and Sara Lenzi.</p>
 
-\nabla \cdot \mathbf{u} = 0.
+<p>The buoyancy term is written explicitly, no subgrid model is adopted.</p>
 
-where beta is the thermal expansion coefficient.
+<p>&nbsp;</p>
 
+<p><em><strong>Model equations of this code (OpenFOAM):</strong></em></p>
 
-### How to use convectiveFoam1.0 :
+<p><span class="math-tex">\(\frac{\mathbf{u}^m_n-\mathbf{u}^{m-1}_n}{\Delta t} = -\frac{1}{\rho_0}\nabla p + g \beta \Delta T \mathbf{\hat{z}} + \nu \nabla^2 \mathbf{u} \hspace{0.5cm} \text{with} \hspace{0.5cm} n,m \in \mathbb{N} \\ \frac{\partial T}{\partial t} + (\mathbf{u} \cdot \nabla) T = \kappa \nabla^2 T\\ \nabla \cdot \mathbf{u} = 0.\)</span></p>
 
-##  Installation
+<p><br />
+where <em>n</em> indicates the n-th PIMPLE iteration and <em>m</em> the m-th PISO iteration.</p>
 
-  - Download the source files
-  - Make everything executable if necessary
-    ```
-    chmod -R +x *
-    ```
-  - Be sure the environment variables of OpenFoam 4.x have been loaded in your terminal window
-  - Enter in the convectiveFoam1.0 folder and install it running the script:
-    ```
-    ./Allwmake
-    ```
- 
+<p>A tutorial folder is provided, to simulate a simplified (isoviscous, 3D) convection problem at infinite Prandtl number .</p>
 
- ## Run the tutorial
+<p>BCs: fixed temperature and free slip velocity on top and bottom, periodicity along horizontal directions.</p>
 
-  - Enter in the PrInfRa3e6 folder and run: 
-    ```
-    ./Allclean 
-    ```       
-    ```
-    ./Allrun
-    ```
+<p><br />
+<br />
+<strong>How to use convectiveFoam1.0 :</strong></p>
+
+<ul>
+	<li>Installation</li>
+</ul>
+
+<ol>
+	<li>Download the source files</li>
+	<li>Make everything executable if necessary
+	<ol>
+		<li>chmod -R +x *</li>
+	</ol>
+	</li>
+	<li>Be sure the environment variables of OpenFoam 4.x have been loaded in your terminal window</li>
+	<li>&nbsp;Enter in the convectiveFoam1.0 folder and install it running the script:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<ol>
+		<li>./Allwmake</li>
+	</ol>
+	</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>Run the tutorial</li>
+</ul>
+
+<ol>
+	<li>Enter in the PrInfRa3e6 folder and run:&nbsp;
+	<ol>
+		<li>./Allclean&nbsp;</li>
+		<li>./Allrun</li>
+	</ol>
+	</li>
+</ol>
