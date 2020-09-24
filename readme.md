@@ -2,7 +2,7 @@
 
 <p><em><strong>General non dimensional problem:</strong></em></p>
 
-<p><em><span class="math-tex">\(\nabla p - \text{Ra}T \mathbf{\hat{z}} - \nabla^2 \mathbf{u} = 0\\ \frac{\partial T}{\partial t} + (\mathbf{u} \cdot \nabla)T = \nabla^2 T \\ \nabla \cdot \mathbf{u} = 0.\)</span></em></p>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\newline&space;\nabla&space;p&space;-&space;\text{Ra}T&space;\mathbf{\hat{z}}&space;-&space;\nabla^2&space;\mathbf{u}&space;=&space;0&space;\newline&space;\newline&space;\frac{\partial&space;T}{\partial&space;t}&space;&plus;&space;(\mathbf{u}&space;\cdot&space;\nabla)T&space;=&space;\nabla^2&space;T&space;\newline&space;\newline&space;\nabla&space;\cdot&space;\mathbf{u}=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\newline&space;\nabla&space;p&space;-&space;\text{Ra}T&space;\mathbf{\hat{z}}&space;-&space;\nabla^2&space;\mathbf{u}&space;=&space;0&space;\newline&space;\newline&space;\frac{\partial&space;T}{\partial&space;t}&space;&plus;&space;(\mathbf{u}&space;\cdot&space;\nabla)T&space;=&space;\nabla^2&space;T&space;\newline&space;\newline&space;\nabla&space;\cdot&space;\mathbf{u}=0" title="\newline \nabla p - \text{Ra}T \mathbf{\hat{z}} - \nabla^2 \mathbf{u} = 0 \newline \newline \frac{\partial T}{\partial t} + (\mathbf{u} \cdot \nabla)T = \nabla^2 T \newline \newline \nabla \cdot \mathbf{u}=0" /></a>
 
 <p>&nbsp;</p>
 
@@ -14,8 +14,7 @@
 
 <p><em><strong>Model equations of this code (OpenFOAM):</strong></em></p>
 
-<p><span class="math-tex">\(\frac{\mathbf{u}^m_n-\mathbf{u}^{m-1}_n}{\Delta t} = -\frac{1}{\rho_0}\nabla p + g \beta \Delta T \mathbf{\hat{z}} + \nu \nabla^2 \mathbf{u} \hspace{0.5cm} \text{with} \hspace{0.5cm} n,m \in \mathbb{N} \\ \frac{\partial T}{\partial t} + (\mathbf{u} \cdot \nabla) T = \kappa \nabla^2 T\\ \nabla \cdot \mathbf{u} = 0.\)</span></p>
-
+<a href="https://www.codecogs.com/eqnedit.php?latex=\newline&space;\frac{\mathbf{u}^m_n-\mathbf{u}^{m-1}_n}{\Delta&space;t}&space;=&space;-\frac{1}{\rho_0}\nabla&space;p&space;&plus;&space;g&space;\beta&space;\Delta&space;T&space;\mathbf{\hat{z}}&space;&plus;&space;\nu&space;\nabla^2&space;\mathbf{u}&space;\hspace{0.5cm}&space;\text{with}&space;\hspace{0.5cm}&space;n,m&space;\in&space;\mathbb{N}&space;\newline&space;\newline&space;\frac{\partial&space;T}{\partial&space;t}&space;&plus;&space;(\mathbf{u}&space;\cdot&space;\nabla)&space;T&space;=&space;\kappa&space;\nabla^2&space;T&space;\newline&space;\newline&space;\nabla&space;\cdot&space;\mathbf{u}&space;=&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\newline&space;\frac{\mathbf{u}^m_n-\mathbf{u}^{m-1}_n}{\Delta&space;t}&space;=&space;-\frac{1}{\rho_0}\nabla&space;p&space;&plus;&space;g&space;\beta&space;\Delta&space;T&space;\mathbf{\hat{z}}&space;&plus;&space;\nu&space;\nabla^2&space;\mathbf{u}&space;\hspace{0.5cm}&space;\text{with}&space;\hspace{0.5cm}&space;n,m&space;\in&space;\mathbb{N}&space;\newline&space;\newline&space;\frac{\partial&space;T}{\partial&space;t}&space;&plus;&space;(\mathbf{u}&space;\cdot&space;\nabla)&space;T&space;=&space;\kappa&space;\nabla^2&space;T&space;\newline&space;\newline&space;\nabla&space;\cdot&space;\mathbf{u}&space;=&space;0" title="\newline \frac{\mathbf{u}^m_n-\mathbf{u}^{m-1}_n}{\Delta t} = -\frac{1}{\rho_0}\nabla p + g \beta \Delta T \mathbf{\hat{z}} + \nu \nabla^2 \mathbf{u} \hspace{0.5cm} \text{with} \hspace{0.5cm} n,m \in \mathbb{N} \newline \newline \frac{\partial T}{\partial t} + (\mathbf{u} \cdot \nabla) T = \kappa \nabla^2 T \newline \newline \nabla \cdot \mathbf{u} = 0" /></a>
 <p><br />
 where <em>n</em> indicates the n-th PIMPLE iteration and <em>m</em> the m-th PISO iteration.</p>
 
